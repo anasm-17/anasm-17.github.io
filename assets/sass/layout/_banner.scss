@@ -36,6 +36,20 @@
 			}
 		}
 
+		.image {
+			border-radius: 100%;
+			margin: 0 _size(section-spacing, large) _size(element-margin) 0;
+			width: 22em;
+			overflow: hidden;
+			-ms-flex: 1;
+
+			img {
+				border-radius: 100%;
+				width: 100%;
+				vertical-align: middle;
+			}
+		}
+
 		h2 {
 			@include vendor('transition', (
 				'opacity 0.5s ease',
@@ -67,7 +81,7 @@
 			font-weight: _font(weight-heading);
 			letter-spacing: _font(kern-heading);
 			line-height: 2;
-			text-transform: uppercase;
+			text-transform: none;
 		}
 
 		@include breakpoint('<=large') {
